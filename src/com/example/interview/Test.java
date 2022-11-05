@@ -33,8 +33,10 @@ public class Test {
         }
 
         for (int j = 0; j <5; j++) {
-            if (versionOne.get(j) > versionTwo.get(j)) answer = 1;
-            else if (versionOne.get(j) < versionTwo.get(j)) answer = -1;
+            String temp1 = versionOne.get(j);
+            String temp2 = versionTwo.get(j);
+            if (Integer.parseInt(temp1) > Integer.parseInt(temp2)) answer = 1;
+            else if (Integer.parseInt(temp1) < Integer.parseInt(temp2)) answer = -1;
             else answer = 0;
         }
 
